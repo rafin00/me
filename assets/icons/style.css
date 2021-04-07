@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'rafinutshaw';
-  src:  url('fonts/rafinutshaw.eot?n7sm74');
-  src:  url('fonts/rafinutshaw.eot?n7sm74#iefix') format('embedded-opentype'),
-    url('fonts/rafinutshaw.ttf?n7sm74') format('truetype'),
-    url('fonts/rafinutshaw.woff?n7sm74') format('woff'),
-    url('fonts/rafinutshaw.svg?n7sm74#rafinutshaw') format('svg');
+  src:  url('fonts/rafinutshaw.eot?bu3iq5');
+  src:  url('fonts/rafinutshaw.eot?bu3iq5#iefix') format('embedded-opentype'),
+    url('fonts/rafinutshaw.ttf?bu3iq5') format('truetype'),
+    url('fonts/rafinutshaw.woff?bu3iq5') format('woff'),
+    url('fonts/rafinutshaw.svg?bu3iq5#rafinutshaw') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,16 +25,128 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ru-database:before {
+  content: "\e905";
+}
+.ru-android:before {
+  content: "\e90b";
+}
+.ru-chrome:before {
+  content: "\e90c";
+}
+.ru-design:before {
+  content: "\e91d";
+}
+.ru-resume:before {
+  content: "\e904";
+}
+.ru-user:before {
+  content: "\e906";
+}
+.ru-net-core .path1:before {
+  content: "\e913";
+  color: rgb(92, 45, 145);
+}
+.ru-net-core .path2:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.1;
+}
+.ru-net-core .path3:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ru-net-core .path4:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ru-net-core .path5:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ru-net-core .path6:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.ru-net-core .path7:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(242, 242, 242);
+}
+.ru-net-core .path8:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(242, 242, 242);
+}
+.ru-net-core .path9:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(242, 242, 242);
+}
+.ru-net-core .path10:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(242, 242, 242);
+}
+.ru-js .path1:before {
+  content: "\e902";
+  color: rgb(240, 219, 79);
+}
+.ru-js .path2:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(50, 51, 48);
+}
+.ru-js .path3:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(50, 51, 48);
+}
+.ru-linkedin:before {
+  content: "\e911";
+}
+.ru-settings:before {
+  content: "\e903";
+}
+.ru-tailwind-css:before {
+  content: "\e907";
+  color: #fff;
+}
+.ru-css:before {
+  content: "\e908";
+  color: #2f9dd9;
+}
+.ru-html:before {
+  content: "\e909";
+}
+.ru-jquery:before {
+  content: "\e90a";
+}
+.ru-flutter:before {
+  content: "\e90e";
+}
+.ru-angular:before {
+  content: "\e90f";
+  color: #dd0031;
+}
+.ru-react:before {
+  content: "\e910";
+  color: #00d8ff;
+}
 .ru-skype:before {
   content: "\e900";
 }
 .ru-github:before {
   content: "\e901";
 }
-.ru-linkedin:before {
-  content: "\e902";
-  color: #0077b7;
-}
 .ru-email:before {
   content: "\e946";
+}
+.ru-checkmark:before {
+  content: "\ea10";
 }

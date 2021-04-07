@@ -1,0 +1,11 @@
+.overflow-visible {
+    overflow: visible;
+}
+.progress {
+    overflow: visible !important;
+}
+.percent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

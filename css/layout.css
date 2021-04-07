@@ -669,7 +669,7 @@ header .menu-btn span:after {
 }
 
 .skills ul li .progress .percentage .percent .icon {
-	font-size: 24px;
+	/* font-size: 24px; */
 	color: #fefefe;
 }
 
