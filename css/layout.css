@@ -238,7 +238,7 @@ header .menu-btn span:after {
 	margin: 0 0 0 -31px;
 	position: absolute;
 	left: 50%;
-	bottom: -45px;
+	bottom: -60px;
 	width: 62px;
 	height: 62px;
 	background: #304fff;
@@ -681,6 +681,11 @@ header .menu-btn span:after {
 }
 
 /* 7. Experience & Education */
+@media (max-width: 1080px) {
+	.section.experience .title, .section.education .title {
+		margin-bottom: 20px;
+	}
+}
 @media (max-width: 720px) {
 	.section.experience .title,
 	.section.education .title {
@@ -772,7 +777,7 @@ header .menu-btn span:after {
 
 .cd-timeline .cd-timeline-block:nth-child(even) .cd-timeline-content .date {
 	right: auto;
-	left: -154px;
+	left: -237px;
 }
 
 .cd-timeline .cd-timeline-block:nth-child(even) .cd-timeline-content .date:before {
@@ -878,7 +883,7 @@ header .menu-btn span:after {
 	margin: 0;
 	position: absolute;
 	top: 13px;
-	right: -154px;
+	right: -269px;
 }
 
 .cd-timeline .cd-timeline-block .cd-timeline-content .date:before {
@@ -1097,6 +1102,8 @@ header .menu-btn span:after {
 	-moz-transition: all 0.4s ease 0s;
 	-webkit-transition: all 0.4s ease 0s;
 	-o-transition: all 0.4s ease 0s;
+	height: 150px;
+    object-fit: cover;
 }
 
 .box-items .box-item .content-box .category {
