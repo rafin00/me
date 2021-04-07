@@ -681,11 +681,11 @@ header .menu-btn span:after {
 }
 
 /* 7. Experience & Education */
-@media (max-width: 1080px) {
+/* @media (max-width: 1080px) {
 	.section.experience .title, .section.education .title {
 		margin-bottom: 20px;
 	}
-}
+} */
 @media (max-width: 720px) {
 	.section.experience .title,
 	.section.education .title {
@@ -696,7 +696,7 @@ header .menu-btn span:after {
 	.section.experience .title .circle,
 	.section.education .title .circle {
 		margin: 0;
-		bottom: 0;
+		bottom: -13px;
 		left: 0;
 	}
 
