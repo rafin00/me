@@ -11,6 +11,6 @@ function getText(){
             'Accept': 'application/text'
            }
     }).then((response)=>{
-        console.log(response)
+        console.log(response.text())
     })
 }
