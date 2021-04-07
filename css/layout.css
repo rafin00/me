@@ -1625,6 +1625,8 @@ footer .copy {
 .popup-box .image img {
 	width: 100%;
 	height: auto;
+	max-height: 300px;
+    object-fit: contain;
 }
 
 .popup-box .desc {
