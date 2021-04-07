@@ -1,16 +1,17 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    console.log('yo')
     getText();
   });
 function getText(){
     // read text from URL location
-    fetch('visitorCount.txt',{
-        headers : { 
-            'Content-Type': 'application/text',
-            'Accept': 'application/text'
-           }
+    fetch('https://api.countapi.xyz/hit/rafinutshaw',{
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
     }).then((response)=>{
-        console.log(response.text())
+        console.log(response)
     })
+
+
 }
