@@ -86,7 +86,7 @@ body {
 /* 2. Container */
 .container {
 	position: relative;
-	background: #eeeeee;
+	background: radial-gradient(blue, transparent);
 }
 
 .wrapper {
