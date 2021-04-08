@@ -179,12 +179,16 @@ $(function () {
 	var $container = $('.box-items');
 	
 	$container.imagesLoaded(function(){
-		$container.multipleFilterMasonry({
-			itemSelector: '.box-item',
-			filtersGroupSelector: '.filters',
-			percentPosition: true,
-			gutter: 0
-		});
+		var timerRef = setTimeout(() => { 
+			$container.multipleFilterMasonry({
+				itemSelector: '.box-item',
+				filtersGroupSelector: '.filters',
+				percentPosition: true,
+				gutter: 0
+			});
+			clearTimeout(timerRef)
+		 }, 500);
+		
 	});
 	
 	/* 12. Initialize masonry filter */
