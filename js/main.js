@@ -187,7 +187,7 @@ $(function () {
 				gutter: 0
 			});
 			clearTimeout(timerRef)
-		 }, 500);
+		 }, 1000);
 		
 	});
 	
