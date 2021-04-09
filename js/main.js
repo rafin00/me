@@ -28,7 +28,7 @@ $(window).load(function () {
 	// }
 
 	/* Youtube video background */
-	var myPlayer = $("#video-bg").YTPlayer();
+	// var myPlayer = $("#video-bg").YTPlayer();
 
 	/* Smoothscroll */
 	if($('#home-section').length) {
@@ -86,17 +86,17 @@ $(window).load(function () {
 	});
 
 	/* Clients carousel */
-	$(".reviews-carousel .owl-carousel").owlCarousel({
-		items: 1,
-		margin: 0,
-		nav: false,
-		dots: true,
-		loop: false,
-		smartSpeed: 600,
-		mouseDrag: true,
-		touchDrag: true,
-		autoplay: false
-	});
+	// $(".reviews-carousel .owl-carousel").owlCarousel({
+	// 	items: 1,
+	// 	margin: 0,
+	// 	nav: false,
+	// 	dots: true,
+	// 	loop: false,
+	// 	smartSpeed: 600,
+	// 	mouseDrag: true,
+	// 	touchDrag: true,
+	// 	autoplay: false
+	// });
 
 	/* Button hover effect */
 	$('.btn_animated').on('mouseenter', '.circle', function(e){
@@ -121,63 +121,63 @@ $(window).load(function () {
 	});
 	
 	/* Validate contact form */
-	$("#cform").validate({
-		rules: {
-			name: {
-				required: true
-			},
-			message: {
-				required: true
-			},
-			subject: {
-				required: true
-			},
-			email: {
-				required: true,
-				email: true
-			}
-		},
-		success: "valid",
-		submitHandler: function() {
-			$.ajax({
-				url: 'mailer/feedback.php',
-				type: 'post',
-				dataType: 'json',
-				data: 'name='+ $("#cform").find('input[name="name"]').val() + '&email='+ $("#cform").find('input[name="email"]').val() + '&subject='+ $("#cform").find('input[name="subject"]').val() + '&message=' + $("#cform").find('textarea[name="message"]').val(),
-				beforeSend: function() {
+	// $("#cform").validate({
+	// 	rules: {
+	// 		name: {
+	// 			required: true
+	// 		},
+	// 		message: {
+	// 			required: true
+	// 		},
+	// 		subject: {
+	// 			required: true
+	// 		},
+	// 		email: {
+	// 			required: true,
+	// 			email: true
+	// 		}
+	// 	},
+	// 	success: "valid",
+	// 	submitHandler: function() {
+	// 		$.ajax({
+	// 			url: 'mailer/feedback.php',
+	// 			type: 'post',
+	// 			dataType: 'json',
+	// 			data: 'name='+ $("#cform").find('input[name="name"]').val() + '&email='+ $("#cform").find('input[name="email"]').val() + '&subject='+ $("#cform").find('input[name="subject"]').val() + '&message=' + $("#cform").find('textarea[name="message"]').val(),
+	// 			beforeSend: function() {
 				
-				},
-				complete: function() {
+	// 			},
+	// 			complete: function() {
 				
-				},
-				success: function(data) {
-					$('#cform').fadeOut();
-					$('.alert-success').delay(1000).fadeIn();
-				}
-			});
-		}
-	});
+	// 			},
+	// 			success: function(data) {
+	// 				$('#cform').fadeOut();
+	// 				$('.alert-success').delay(1000).fadeIn();
+	// 			}
+	// 		});
+	// 	}
+	// });
 
 	/* Validate contact form */
-	$("#blog-form").validate({
-		rules: {
-			name: {
-				required: true
-			},
-			message: {
-				required: true
-			},
-			email: {
-				required: true,
-				email: true
-			}
-		},
-		success: "valid",
-		submitHandler: function() {
-			$('#blog-form').fadeOut();
-			$('.alert-success').delay(1000).fadeIn();
-		}
-	});
+	// $("#blog-form").validate({
+	// 	rules: {
+	// 		name: {
+	// 			required: true
+	// 		},
+	// 		message: {
+	// 			required: true
+	// 		},
+	// 		email: {
+	// 			required: true,
+	// 			email: true
+	// 		}
+	// 	},
+	// 	success: "valid",
+	// 	submitHandler: function() {
+	// 		$('#blog-form').fadeOut();
+	// 		$('.alert-success').delay(1000).fadeIn();
+	// 	}
+	// });
 	
 	/* Initialize masonry items */
 	var $container = $('.box-items');
