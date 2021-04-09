@@ -3,25 +3,29 @@
 *	Copyright © mCard by beshleyua. All Rights Reserved.
 **/
 
-$(function () {
+$(window).load(function () {
 	'use strict';
 	
 	var width = $(window).width();
 	var height = $(window).height();
 	
 	/* Preloader */
-	$(window).on('load', function() {
-		$(".preloader .spinner").fadeOut(function(){
-			$('.preloader').fadeOut();
-			$('body').addClass('ready');
-		});
+	$(".preloader .spinner").fadeOut(function(){
+		$('.preloader').fadeOut();
+		$('body').addClass('ready');
 	});
+	// $(window).on('load', function() {
+	// 	$(".preloader .spinner").fadeOut(function(){
+	// 		$('.preloader').fadeOut();
+	// 		$('body').addClass('ready');
+	// 	});
+	// });
 
 	/* Fade animations on scroll */
-	if (width > 720) {
-		window.sr = ScrollReveal();
-		sr.reveal('.animated');
-	}
+	// if (width > 720) {
+	// 	window.sr = ScrollReveal();
+	// 	sr.reveal('.animated');
+	// }
 
 	/* Youtube video background */
 	var myPlayer = $("#video-bg").YTPlayer();
@@ -179,17 +183,37 @@ $(function () {
 	var $container = $('.box-items');
 	
 	$container.imagesLoaded(function(){
+
+		// $(".box-items").masonry({
+		// itemSelector: ".box-item"
+		// });
+		// var timerRef = setTimeout(() => { 
+		// 	$container.multipleFilterMasonry({
+		// 		itemSelector: '.box-item',
+		// 		filtersGroupSelector: '.filters',
+		// 		percentPosition: true,
+		// 		gutter: 0,
+
+		// 	});
+		// 	clearTimeout(timerRef)
+		//  }, );
+
+		$container.multipleFilterMasonry({
+			itemSelector: '.box-item',
+			filtersGroupSelector: '.filters',
+			percentPosition: true,
+			gutter: 0,
+
+		});
 		var timerRef = setTimeout(() => { 
-			$container.multipleFilterMasonry({
-				itemSelector: '.box-item',
-				filtersGroupSelector: '.filters',
-				percentPosition: true,
-				gutter: 0
-			});
-			clearTimeout(timerRef)
-		 }, 1000);
-		
+		if (width > 720) {
+			window.sr = ScrollReveal();
+			sr.reveal('.animated');
+		}
+		clearTimeout(timerRef)
+		}, 500);
 	});
+	
 	
 	/* 12. Initialize masonry filter */
 	$('.filters label').on('change', 'input[type="radio"]', function() {
