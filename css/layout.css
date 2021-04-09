@@ -1074,7 +1074,7 @@ header .menu-btn span:after {
 	-khtml-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 }
 
-.box-items .box-item .image a {
+.box-items .box-item .image img {
 	position: relative;
 	display: block;
 	font-size: 0;
@@ -1130,8 +1130,8 @@ header .menu-btn span:after {
 	margin: 0;
 }
 
-.box-items .box-item:hover .image a:before {
-	opacity: 0.3;
+.box-items .box-item:hover .image {
+	opacity: 0.9;
 }
 
 .box-items .box-item:hover .image img {
