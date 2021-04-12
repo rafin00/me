@@ -37,7 +37,7 @@ $(window).load(function () {
 			$('.top-menu ul li a').each(function () {
 				var currLink = $(this);
 				var refElement = $(currLink.attr("href"));
-				if (refElement.offset().top <= scrollPos) {
+				if (refElement.offset().top - 30 <= scrollPos) {
 					$('.top-menu ul li').removeClass("active");
 					currLink.closest('li').addClass("active");
 				}
